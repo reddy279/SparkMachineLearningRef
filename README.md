@@ -1,2 +1,0 @@
-# SparkReferenceUseCases
-# SparkMachineLearningRef
