@@ -45,7 +45,7 @@ object EmergencyCallsAnlysis extends App {
 
   import spark.implicits._
 
-  val emergency_calls_df = spark.read.option("header", true).schema(schema_emergency_ds).csv("/Users/p5103951/IdeaProjects/SparkMachineLearningRef/src/main/resources/Emergency.csv")
+  val emergency_calls_df = spark.read.option("header", true).schema(schema_emergency_ds).csv("/Users/p5103951/IdeaProjects/DataSources/Emergency.csv")
   // emergency_calls_df.show(5)
 
   emergency_calls_df.createOrReplaceTempView("emergency_table")
@@ -54,7 +54,7 @@ object EmergencyCallsAnlysis extends App {
   //emergencyTable_result.show(5)
 
 
-  val zip_code_df = spark.read.option("header", true).schema(schema_zipCode_ds).csv("/Users/p5103951/IdeaProjects/SparkMachineLearningRef/src/main/resources/ZipCodes.csv")
+  val zip_code_df = spark.read.option("header", true).schema(schema_zipCode_ds).csv("/Users/p5103951/IdeaProjects/DataSources/ZipCodes.csv")
   zip_code_df.createOrReplaceTempView("zip_code_table")
 
   val zip_code_table_result = spark.sql("select * from zip_code_table")

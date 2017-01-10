@@ -24,7 +24,7 @@ object UberCaseWeeklyDemand extends App {
     .getOrCreate()
 
   // Read the Dataset from the source.
-  val uberDataSet: RDD[String] = spark.sparkContext.textFile("/Users/p5103951/IdeaProjects/SparkMachineLearningRef/src/main/resources/uberData.txt")
+  val uberDataSet: RDD[String] = spark.sparkContext.textFile("/Users/p5103951/IdeaProjects/DataSources/uberData.txt")
   // Reader the Header Row
   val header = uberDataSet.first();
 

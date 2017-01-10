@@ -22,7 +22,7 @@ object IPLMatchWinningAnalysis extends App {
     .getOrCreate()
 
   // Read the original Dataset
-  val matchDataset: RDD[String] = spark.sparkContext.textFile("/Users/p5103951/IdeaProjects/SparkMachineLearningRef/src/main/resources/IPL_Matches.csv")
+  val matchDataset: RDD[String] = spark.sparkContext.textFile("/Users/p5103951/IdeaProjects/DataSources/IPL_Matches.csv")
 
   // Filter the records which do not have 19 fileds
   val filterBadRecords: RDD[Array[String]] = matchDataset.map(x => x.split(",")).filter(line => line.length < 19)
