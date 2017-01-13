@@ -4,7 +4,7 @@
 		module="sparkmachinelearningref$sources_2.10"
 		revision="1.0"
 		status="integration"
-		publication="20170108132820"
+		publication="20170112230208"
 	/>
 	<configurations>
 		<conf name="default" visibility="public" description=""/>
@@ -15,8 +15,20 @@
 		<dependency org="org.scala-sbt" name="main" rev="0.13.13" transitive="false" conf="default->compile,default(compile)">
 			<artifact name="main" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 		</dependency>
+		<dependency org="org.eclipse.sisu" name="org.eclipse.sisu.inject" rev="0.3.0" transitive="false" conf="default->default,compile,runtime(*),master(compile),runtime,default(compile),compile(*),master">
+			<artifact name="org.eclipse.sisu.inject" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		</dependency>
 		<dependency org="org.scala-sbt" name="io" rev="0.13.13" transitive="false" conf="default->compile,default(compile)">
 			<artifact name="io" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		</dependency>
+		<dependency org="javax.enterprise" name="cdi-api" rev="1.0" transitive="false" conf="default->default,compile,runtime(*),master(compile),runtime,default(compile),compile(*),master">
+			<artifact name="cdi-api" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		</dependency>
+		<dependency org="org.apache.maven" name="maven-model" rev="3.3.3" transitive="false" conf="default->default,compile,runtime(*),master(compile),runtime,default(compile),compile(*),master">
+			<artifact name="maven-model" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		</dependency>
+		<dependency org="org.apache.maven" name="maven-artifact" rev="3.3.3" transitive="false" conf="default->default,compile,runtime(*),master(compile),runtime,default(compile),compile(*),master">
+			<artifact name="maven-artifact" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 		</dependency>
 		<dependency org="org.scala-sbt" name="compiler-ivy-integration" rev="0.13.13" transitive="false" conf="default->compile,default(compile)">
 			<artifact name="compiler-ivy-integration" type="src" ext="jar" conf="sources" e:classifier="sources"/>
@@ -33,8 +45,17 @@
 		<dependency org="org.scala-sbt" name="logic" rev="0.13.13" transitive="false" conf="default->compile,default(compile)">
 			<artifact name="logic" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 		</dependency>
+		<dependency org="org.apache.ant" name="ant-launcher" rev="1.9.6" transitive="false" conf="default->default,compile,runtime(*),master(compile),runtime,default(compile),compile(*),master">
+			<artifact name="ant-launcher" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		</dependency>
+		<dependency org="org.codehaus.plexus" name="plexus-utils" rev="3.0.20" transitive="false" conf="default->default,compile,runtime(*),master(compile),runtime,default(compile),compile(*),master">
+			<artifact name="plexus-utils" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		</dependency>
 		<dependency org="org.scalamacros" name="quasiquotes_2.10" rev="2.0.1" transitive="false" conf="default->master(*),compile,runtime(*),runtime,compile(*),master">
 			<artifact name="quasiquotes_2.10" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		</dependency>
+		<dependency org="org.apache.maven" name="maven-plugin-api" rev="3.3.3" transitive="false" conf="default->default,compile,runtime(*),master(compile),runtime,default(compile),compile(*),master">
+			<artifact name="maven-plugin-api" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 		</dependency>
 		<dependency org="org.scala-sbt" name="cross" rev="0.13.13" transitive="false" conf="default->compile,default(compile)">
 			<artifact name="cross" type="src" ext="jar" conf="sources" e:classifier="sources"/>
@@ -45,8 +66,14 @@
 		<dependency org="org.scala-lang.modules" name="scala-pickling_2.10" rev="0.10.1" transitive="false" conf="default->master(*),compile,runtime(*),runtime,compile(*),master">
 			<artifact name="scala-pickling_2.10" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 		</dependency>
+		<dependency org="org.codehaus.plexus" name="plexus-classworlds" rev="2.5.2" transitive="false" conf="default->default,compile,runtime(*),master(compile),runtime,default(compile),compile(*),master">
+			<artifact name="plexus-classworlds" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		</dependency>
 		<dependency org="org.scala-sbt" name="persist" rev="0.13.13" transitive="false" conf="default->compile,default(compile)">
 			<artifact name="persist" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		</dependency>
+		<dependency org="org.scalactic" name="scalactic_2.10" rev="2.2.1" transitive="false" conf="default->default,compile,runtime,default(compile),master">
+			<artifact name="scalactic_2.10" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 		</dependency>
 		<dependency org="org.scala-sbt" name="compiler-interface" rev="0.13.13" transitive="false" conf="default->compile,default(compile)">
 			<artifact name="compiler-interface" type="src" ext="jar" conf="sources" e:classifier="sources"/>
@@ -60,10 +87,13 @@
 		<dependency org="org.scala-sbt" name="relation" rev="0.13.13" transitive="false" conf="default->compile,default(compile)">
 			<artifact name="relation" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 		</dependency>
+		<dependency org="org.ow2.asm" name="asm" rev="5.0.4" transitive="false" conf="default->default,compile,runtime(*),master(compile),runtime,default(compile),compile(*),master">
+			<artifact name="asm" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		</dependency>
 		<dependency org="org.scala-sbt" name="tasks" rev="0.13.13" transitive="false" conf="default->compile,default(compile)">
 			<artifact name="tasks" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 		</dependency>
-		<dependency org="org.scala-lang" name="scala-reflect" rev="2.10.6" transitive="false" conf="default->master(*),default,compile,runtime(*),master(compile),runtime,default(compile),compile(*),master" info.apiURL="http://www.scala-lang.org/api/2.10.6/">
+		<dependency org="org.scala-lang" name="scala-reflect" rev="2.10.6" transitive="false" conf="default->default,master(*),compile,runtime(*),master(compile),runtime,default(compile),compile(*),master" info.apiURL="http://www.scala-lang.org/api/2.10.6/">
 			<artifact name="scala-reflect" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 		</dependency>
 		<dependency org="org.scala-sbt" name="task-system" rev="0.13.13" transitive="false" conf="default->compile,default(compile)">
@@ -102,14 +132,23 @@
 		<dependency org="org.scala-sbt" name="ivy" rev="0.13.13" transitive="false" conf="default->compile,default(compile)">
 			<artifact name="ivy" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 		</dependency>
+		<dependency org="com.eed3si9n" name="sbt-assembly" rev="0.14.3" transitive="false" conf="default->compile,default(compile)" scalaVersion="2.10" sbtVersion="0.13">
+			<artifact name="sbt-assembly" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		</dependency>
 		<dependency org="org.spire-math" name="jawn-parser_2.10" rev="0.6.0" transitive="false" conf="default->master(*),compile,runtime(*),runtime,compile(*),master">
 			<artifact name="jawn-parser_2.10" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		</dependency>
+		<dependency org="org.ow2.asm" name="asm-commons" rev="5.0.4" transitive="false" conf="default->default,compile,runtime(*),master(compile),runtime,default(compile),compile(*),master">
+			<artifact name="asm-commons" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 		</dependency>
 		<dependency org="org.scala-sbt" name="compile" rev="0.13.13" transitive="false" conf="default->compile,default(compile)">
 			<artifact name="compile" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 		</dependency>
 		<dependency org="org.scala-sbt" name="compiler-integration" rev="0.13.13" transitive="false" conf="default->compile,default(compile)">
 			<artifact name="compiler-integration" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		</dependency>
+		<dependency org="org.ow2.asm" name="asm-tree" rev="5.0.4" transitive="false" conf="default->default,compile,runtime(*),master(compile),runtime,default(compile),compile(*),master">
+			<artifact name="asm-tree" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 		</dependency>
 		<dependency org="org.json4s" name="json4s-ast_2.10" rev="3.2.10" transitive="false" conf="default->master(*),compile,runtime(*),runtime,compile(*),master">
 			<artifact name="json4s-ast_2.10" type="src" ext="jar" conf="sources" e:classifier="sources"/>
@@ -123,14 +162,26 @@
 		<dependency org="org.scala-sbt" name="sbt" rev="0.13.13" transitive="false" conf="default->compile,default(compile)">
 			<artifact name="sbt" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 		</dependency>
+		<dependency org="org.pantsbuild" name="jarjar" rev="1.6.0" transitive="false" conf="default->default,compile,runtime,default(compile),master">
+			<artifact name="jarjar" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		</dependency>
 		<dependency org="org.scala-sbt" name="template-resolver" rev="0.1" transitive="false" conf="default->default,compile,runtime,default(compile),master">
 			<artifact name="template-resolver" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		</dependency>
+		<dependency org="org.apache.ant" name="ant" rev="1.9.6" transitive="false" conf="default->default,compile,runtime(*),master(compile),runtime,default(compile),compile(*),master">
+			<artifact name="ant" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		</dependency>
+		<dependency org="org.eclipse.sisu" name="org.eclipse.sisu.plexus" rev="0.3.0" transitive="false" conf="default->default,compile,runtime(*),master(compile),runtime,default(compile),compile(*),master">
+			<artifact name="org.eclipse.sisu.plexus" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 		</dependency>
 		<dependency org="org.scala-tools.sbinary" name="sbinary_2.10" rev="0.4.2" transitive="false" conf="default->compile,default(compile)">
 			<artifact name="sbinary_2.10" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 		</dependency>
 		<dependency org="org.scala-sbt" name="api" rev="0.13.13" transitive="false" conf="default->compile,default(compile)">
 			<artifact name="api" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		</dependency>
+		<dependency org="org.jboss.interceptor" name="jboss-interceptor-api" rev="1.1" transitive="false" conf="default->compile,runtime(*),master(compile),runtime,compile(*),master">
+			<artifact name="jboss-interceptor-api" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 		</dependency>
 		<dependency org="org.scala-sbt" name="incremental-compiler" rev="0.13.13" transitive="false" conf="default->compile,default(compile)">
 			<artifact name="incremental-compiler" type="src" ext="jar" conf="sources" e:classifier="sources"/>
@@ -140,6 +191,12 @@
 		</dependency>
 		<dependency org="org.spire-math" name="json4s-support_2.10" rev="0.6.0" transitive="false" conf="default->master(*),compile,runtime(*),runtime,compile(*),master">
 			<artifact name="json4s-support_2.10" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		</dependency>
+		<dependency org="org.codehaus.plexus" name="plexus-component-annotations" rev="1.5.5" transitive="false" conf="default->default,compile,runtime(*),master(compile),runtime,default(compile),compile(*),master">
+			<artifact name="plexus-component-annotations" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		</dependency>
+		<dependency org="javax.annotation" name="jsr250-api" rev="1.0" transitive="false" conf="default->default,compile,runtime(*),master(compile),runtime,default(compile),compile(*),master">
+			<artifact name="jsr250-api" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 		</dependency>
 		<dependency org="com.thoughtworks.paranamer" name="paranamer" rev="2.6" transitive="false" conf="default->master(*),compile,runtime(*),runtime,compile(*),master">
 			<artifact name="paranamer" type="src" ext="jar" conf="sources" e:classifier="sources"/>
@@ -164,6 +221,9 @@
 		</dependency>
 		<dependency org="org.scala-sbt" name="interface" rev="0.13.13" transitive="false" conf="default->compile,default(compile)" component="xsbti">
 			<artifact name="interface" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		</dependency>
+		<dependency org="javax.inject" name="javax.inject" rev="1" transitive="false" conf="default->default,compile,runtime(*),master(compile),runtime,default(compile),compile(*),master">
+			<artifact name="javax.inject" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 		</dependency>
 		<dependency org="org.scala-sbt" name="logging" rev="0.13.13" transitive="false" conf="default->compile,default(compile)">
 			<artifact name="logging" type="src" ext="jar" conf="sources" e:classifier="sources"/>

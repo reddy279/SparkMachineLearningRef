@@ -7,8 +7,247 @@
 		revision="1.0"
 		conf="default"
 		confs="default"
-		date="20170108132817"/>
+		date="20170112230205"/>
 	<dependencies>
+		<module organisation="com.eed3si9n" name="sbt-assembly">
+			<revision name="0.14.3" status="release" pubdate="20160407091705" resolver="sbt-chain" artresolver="sbt-chain" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="52">
+				<license name="MIT License" url="https://github.com/sbt/sbt-assembly/blob/master/LICENSE"/>
+				<metadata-artifact status="no" details="" size="2025" time="0" location="/Users/p5103951/.ivy2/cache/scala_2.10/sbt_0.13/com.eed3si9n/sbt-assembly/ivy-0.14.3.xml" searched="false" origin-is-local="false" origin-location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.eed3si9n/sbt-assembly/scala_2.10/sbt_0.13/0.14.3/ivys/ivy.xml"/>
+				<caller organisation="default" name="sparkmachinelearningref$sbt_2.10" conf="default" rev="0.14.3" rev-constraint-default="0.14.3" rev-constraint-dynamic="0.14.3" callerrev="1.0" extra-scalaVersion="2.10" extra-sbtVersion="0.13"/>
+				<artifacts>
+					<artifact name="sbt-assembly" type="jar" ext="jar" status="no" details="" size="210505" time="0" location="/Users/p5103951/.ivy2/cache/scala_2.10/sbt_0.13/com.eed3si9n/sbt-assembly/jars/sbt-assembly-0.14.3.jar">
+						<origin-location is-local="false" location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.eed3si9n/sbt-assembly/scala_2.10/sbt_0.13/0.14.3/jars/sbt-assembly.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.pantsbuild" name="jarjar">
+			<revision name="1.6.0" status="release" pubdate="20151005141546" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/pantsbuild/jarjar" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="54">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3049" time="0" location="/Users/p5103951/.ivy2/cache/org.pantsbuild/jarjar/ivy-1.6.0.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/pantsbuild/jarjar/1.6.0/jarjar-1.6.0.pom"/>
+				<caller organisation="com.eed3si9n" name="sbt-assembly" conf="compile" rev="1.6.0" rev-constraint-default="1.6.0" rev-constraint-dynamic="1.6.0" callerrev="0.14.3"/>
+				<caller organisation="default" name="sparkmachinelearningref$sbt_2.10" conf="default" rev="1.6.0" rev-constraint-default="1.6.0" rev-constraint-dynamic="1.6.0" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="jarjar" type="jar" ext="jar" status="no" details="" size="75988" time="0" location="/Users/p5103951/.ivy2/cache/org.pantsbuild/jarjar/jars/jarjar-1.6.0.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/pantsbuild/jarjar/1.6.0/jarjar-1.6.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.maven" name="maven-plugin-api">
+			<revision name="3.3.3" status="release" pubdate="20150422075700" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="60">
+				<metadata-artifact status="no" details="" size="17202" time="0" location="/Users/p5103951/.ivy2/cache/org.apache.maven/maven-plugin-api/ivy-3.3.3.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/apache/maven/maven-plugin-api/3.3.3/maven-plugin-api-3.3.3.pom"/>
+				<caller organisation="org.pantsbuild" name="jarjar" conf="default, compile, runtime, master" rev="3.3.3" rev-constraint-default="3.3.3" rev-constraint-dynamic="3.3.3" callerrev="1.6.0"/>
+				<caller organisation="default" name="sparkmachinelearningref$sbt_2.10" conf="default" rev="3.3.3" rev-constraint-default="3.3.3" rev-constraint-dynamic="3.3.3" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="maven-plugin-api" type="jar" ext="jar" status="no" details="" size="46099" time="0" location="/Users/p5103951/.ivy2/cache/org.apache.maven/maven-plugin-api/jars/maven-plugin-api-3.3.3.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/apache/maven/maven-plugin-api/3.3.3/maven-plugin-api-3.3.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.sisu" name="org.eclipse.sisu.plexus">
+			<revision name="0.3.0" status="release" pubdate="20150219134700" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="64">
+				<metadata-artifact status="no" details="" size="4742" time="0" location="/Users/p5103951/.ivy2/cache/org.eclipse.sisu/org.eclipse.sisu.plexus/ivy-0.3.0.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.0/org.eclipse.sisu.plexus-0.3.0.pom"/>
+				<caller organisation="org.apache.maven" name="maven-plugin-api" conf="compile, runtime" rev="0.3.0" rev-constraint-default="0.3.0" rev-constraint-dynamic="0.3.0" callerrev="3.3.3"/>
+				<caller organisation="default" name="sparkmachinelearningref$sbt_2.10" conf="default" rev="0.3.0" rev-constraint-default="0.3.0" rev-constraint-dynamic="0.3.0" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="org.eclipse.sisu.plexus" type="eclipse-plugin" ext="jar" status="no" details="" size="205404" time="0" location="/Users/p5103951/.ivy2/cache/org.eclipse.sisu/org.eclipse.sisu.plexus/eclipse-plugins/org.eclipse.sisu.plexus-0.3.0.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.0/org.eclipse.sisu.plexus-0.3.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.codehaus.plexus" name="plexus-classworlds">
+			<revision name="2.5.2" status="release" pubdate="20140829130800" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="71">
+				<metadata-artifact status="no" details="" size="9038" time="0" location="/Users/p5103951/.ivy2/cache/org.codehaus.plexus/plexus-classworlds/ivy-2.5.2.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/codehaus/plexus/plexus-classworlds/2.5.2/plexus-classworlds-2.5.2.pom"/>
+				<caller organisation="org.eclipse.sisu" name="org.eclipse.sisu.plexus" conf="default, compile, runtime, master" rev="2.5.2" rev-constraint-default="2.5.2" rev-constraint-dynamic="2.5.2" callerrev="0.3.0"/>
+				<caller organisation="default" name="sparkmachinelearningref$sbt_2.10" conf="default" rev="2.5.2" rev-constraint-default="2.5.2" rev-constraint-dynamic="2.5.2" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="plexus-classworlds" type="bundle" ext="jar" status="no" details="" size="52684" time="0" location="/Users/p5103951/.ivy2/cache/org.codehaus.plexus/plexus-classworlds/bundles/plexus-classworlds-2.5.2.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/codehaus/plexus/plexus-classworlds/2.5.2/plexus-classworlds-2.5.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.codehaus.plexus" name="plexus-component-annotations">
+			<revision name="1.5.5" status="release" pubdate="20100930161458" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="70">
+				<metadata-artifact status="no" details="" size="6209" time="0" location="/Users/p5103951/.ivy2/cache/org.codehaus.plexus/plexus-component-annotations/ivy-1.5.5.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.pom"/>
+				<caller organisation="org.eclipse.sisu" name="org.eclipse.sisu.plexus" conf="default, compile, runtime, master" rev="1.5.5" rev-constraint-default="1.5.5" rev-constraint-dynamic="1.5.5" callerrev="0.3.0"/>
+				<caller organisation="default" name="sparkmachinelearningref$sbt_2.10" conf="default" rev="1.5.5" rev-constraint-default="1.5.5" rev-constraint-dynamic="1.5.5" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="plexus-component-annotations" type="jar" ext="jar" status="no" details="" size="4211" time="0" location="/Users/p5103951/.ivy2/cache/org.codehaus.plexus/plexus-component-annotations/jars/plexus-component-annotations-1.5.5.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.sisu" name="org.eclipse.sisu.inject">
+			<revision name="0.3.0" status="release" pubdate="20150219133300" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="69">
+				<metadata-artifact status="no" details="" size="3520" time="0" location="/Users/p5103951/.ivy2/cache/org.eclipse.sisu/org.eclipse.sisu.inject/ivy-0.3.0.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/eclipse/sisu/org.eclipse.sisu.inject/0.3.0/org.eclipse.sisu.inject-0.3.0.pom"/>
+				<caller organisation="org.eclipse.sisu" name="org.eclipse.sisu.plexus" conf="default, compile, runtime, master" rev="0.3.0" rev-constraint-default="0.3.0" rev-constraint-dynamic="0.3.0" callerrev="0.3.0"/>
+				<caller organisation="default" name="sparkmachinelearningref$sbt_2.10" conf="default" rev="0.3.0" rev-constraint-default="0.3.0" rev-constraint-dynamic="0.3.0" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="org.eclipse.sisu.inject" type="eclipse-plugin" ext="jar" status="no" details="" size="375267" time="0" location="/Users/p5103951/.ivy2/cache/org.eclipse.sisu/org.eclipse.sisu.inject/eclipse-plugins/org.eclipse.sisu.inject-0.3.0.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/eclipse/sisu/org.eclipse.sisu.inject/0.3.0/org.eclipse.sisu.inject-0.3.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.enterprise" name="cdi-api">
+			<revision name="1.0" status="release" pubdate="20091108174419" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="65">
+				<metadata-artifact status="no" details="" size="11095" time="0" location="/Users/p5103951/.ivy2/cache/javax.enterprise/cdi-api/ivy-1.0.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/javax/enterprise/cdi-api/1.0/cdi-api-1.0.pom"/>
+				<caller organisation="org.eclipse.sisu" name="org.eclipse.sisu.plexus" conf="default, compile, runtime, master" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="0.3.0"/>
+				<caller organisation="default" name="sparkmachinelearningref$sbt_2.10" conf="default" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="cdi-api" type="jar" ext="jar" status="no" details="" size="44908" time="0" location="/Users/p5103951/.ivy2/cache/javax.enterprise/cdi-api/jars/cdi-api-1.0.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/javax/enterprise/cdi-api/1.0/cdi-api-1.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.annotation" name="jsr250-api">
+			<revision name="1.0" status="release" pubdate="20080831074536" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jcp.org/aboutJava/communityprocess/final/jsr250/index.html" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="67">
+				<license name="COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) Version 1.0" url="https://glassfish.dev.java.net/public/CDDLv1.0.html"/>
+				<metadata-artifact status="no" details="" size="2465" time="0" location="/Users/p5103951/.ivy2/cache/javax.annotation/jsr250-api/ivy-1.0.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/javax/annotation/jsr250-api/1.0/jsr250-api-1.0.pom"/>
+				<caller organisation="default" name="sparkmachinelearningref$sbt_2.10" conf="default" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="1.0"/>
+				<caller organisation="javax.enterprise" name="cdi-api" conf="default, compile, runtime, master" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="jsr250-api" type="jar" ext="jar" status="no" details="" size="5848" time="0" location="/Users/p5103951/.ivy2/cache/javax.annotation/jsr250-api/jars/jsr250-api-1.0.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/javax/annotation/jsr250-api/1.0/jsr250-api-1.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.jboss.interceptor" name="jboss-interceptor-api">
+			<revision name="1.1" status="release" pubdate="20100719232027" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="66">
+				<metadata-artifact status="no" details="" size="2483" time="0" location="/Users/p5103951/.ivy2/cache/org.jboss.interceptor/jboss-interceptor-api/ivy-1.1.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/jboss/interceptor/jboss-interceptor-api/1.1/jboss-interceptor-api-1.1.pom"/>
+				<caller organisation="javax.enterprise" name="cdi-api" conf="default, compile, runtime, master" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="jboss-interceptor-api" type="jar" ext="jar" status="no" details="" size="5986" time="0" location="/Users/p5103951/.ivy2/cache/org.jboss.interceptor/jboss-interceptor-api/jars/jboss-interceptor-api-1.1.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/jboss/interceptor/jboss-interceptor-api/1.1/jboss-interceptor-api-1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.maven" name="maven-artifact">
+			<revision name="3.3.3" status="release" pubdate="20150422075600" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="63">
+				<metadata-artifact status="no" details="" size="16753" time="0" location="/Users/p5103951/.ivy2/cache/org.apache.maven/maven-artifact/ivy-3.3.3.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/apache/maven/maven-artifact/3.3.3/maven-artifact-3.3.3.pom"/>
+				<caller organisation="org.apache.maven" name="maven-plugin-api" conf="compile, runtime" rev="3.3.3" rev-constraint-default="3.3.3" rev-constraint-dynamic="3.3.3" callerrev="3.3.3"/>
+				<caller organisation="default" name="sparkmachinelearningref$sbt_2.10" conf="default" rev="3.3.3" rev-constraint-default="3.3.3" rev-constraint-dynamic="3.3.3" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="maven-artifact" type="jar" ext="jar" status="no" details="" size="55090" time="0" location="/Users/p5103951/.ivy2/cache/org.apache.maven/maven-artifact/jars/maven-artifact-3.3.3.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/apache/maven/maven-artifact/3.3.3/maven-artifact-3.3.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.maven" name="maven-model">
+			<revision name="3.3.3" status="release" pubdate="20150422075600" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="61">
+				<metadata-artifact status="no" details="" size="16689" time="0" location="/Users/p5103951/.ivy2/cache/org.apache.maven/maven-model/ivy-3.3.3.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/apache/maven/maven-model/3.3.3/maven-model-3.3.3.pom"/>
+				<caller organisation="org.apache.maven" name="maven-plugin-api" conf="compile, runtime" rev="3.3.3" rev-constraint-default="3.3.3" rev-constraint-dynamic="3.3.3" callerrev="3.3.3"/>
+				<caller organisation="default" name="sparkmachinelearningref$sbt_2.10" conf="default" rev="3.3.3" rev-constraint-default="3.3.3" rev-constraint-dynamic="3.3.3" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="maven-model" type="jar" ext="jar" status="no" details="" size="160817" time="0" location="/Users/p5103951/.ivy2/cache/org.apache.maven/maven-model/jars/maven-model-3.3.3.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/apache/maven/maven-model/3.3.3/maven-model-3.3.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.codehaus.plexus" name="plexus-utils">
+			<revision name="3.0.20" status="release" pubdate="20141018160000" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://plexus.codehaus.org/plexus-utils" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="62">
+				<metadata-artifact status="no" details="" size="9199" time="0" location="/Users/p5103951/.ivy2/cache/org.codehaus.plexus/plexus-utils/ivy-3.0.20.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/codehaus/plexus/plexus-utils/3.0.20/plexus-utils-3.0.20.pom"/>
+				<caller organisation="org.apache.maven" name="maven-model" conf="default, compile, runtime, master" rev="3.0.20" rev-constraint-default="3.0.20" rev-constraint-dynamic="3.0.20" callerrev="3.3.3"/>
+				<caller organisation="org.eclipse.sisu" name="org.eclipse.sisu.plexus" conf="default, compile, runtime, master" rev="3.0.17" rev-constraint-default="3.0.17" rev-constraint-dynamic="3.0.17" callerrev="0.3.0"/>
+				<caller organisation="default" name="sparkmachinelearningref$sbt_2.10" conf="default" rev="3.0.20" rev-constraint-default="3.0.20" rev-constraint-dynamic="3.0.20" callerrev="1.0"/>
+				<caller organisation="org.apache.maven" name="maven-artifact" conf="default, compile, runtime, master" rev="3.0.20" rev-constraint-default="3.0.20" rev-constraint-dynamic="3.0.20" callerrev="3.3.3"/>
+				<artifacts>
+					<artifact name="plexus-utils" type="jar" ext="jar" status="no" details="" size="243128" time="0" location="/Users/p5103951/.ivy2/cache/org.codehaus.plexus/plexus-utils/jars/plexus-utils-3.0.20.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/codehaus/plexus/plexus-utils/3.0.20/plexus-utils-3.0.20.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="3.0.17" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="3.0.20"/>
+				<caller organisation="org.eclipse.sisu" name="org.eclipse.sisu.plexus" conf="default, compile, runtime, master" rev="3.0.17" rev-constraint-default="3.0.17" rev-constraint-dynamic="3.0.17" callerrev="0.3.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.ow2.asm" name="asm-commons">
+			<revision name="5.0.4" status="release" pubdate="20150515110500" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="58">
+				<metadata-artifact status="no" details="" size="4414" time="0" location="/Users/p5103951/.ivy2/cache/org.ow2.asm/asm-commons/ivy-5.0.4.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/ow2/asm/asm-commons/5.0.4/asm-commons-5.0.4.pom"/>
+				<caller organisation="org.pantsbuild" name="jarjar" conf="default, compile, runtime, master" rev="5.0.4" rev-constraint-default="5.0.4" rev-constraint-dynamic="5.0.4" callerrev="1.6.0"/>
+				<caller organisation="default" name="sparkmachinelearningref$sbt_2.10" conf="default" rev="5.0.4" rev-constraint-default="5.0.4" rev-constraint-dynamic="5.0.4" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="asm-commons" type="jar" ext="jar" status="no" details="" size="41796" time="0" location="/Users/p5103951/.ivy2/cache/org.ow2.asm/asm-commons/jars/asm-commons-5.0.4.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/ow2/asm/asm-commons/5.0.4/asm-commons-5.0.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.ow2.asm" name="asm-tree">
+			<revision name="5.0.4" status="release" pubdate="20150515110500" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="59">
+				<metadata-artifact status="no" details="" size="4403" time="0" location="/Users/p5103951/.ivy2/cache/org.ow2.asm/asm-tree/ivy-5.0.4.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/ow2/asm/asm-tree/5.0.4/asm-tree-5.0.4.pom"/>
+				<caller organisation="org.ow2.asm" name="asm-commons" conf="compile, runtime" rev="5.0.4" rev-constraint-default="5.0.4" rev-constraint-dynamic="5.0.4" callerrev="5.0.4"/>
+				<caller organisation="default" name="sparkmachinelearningref$sbt_2.10" conf="default" rev="5.0.4" rev-constraint-default="5.0.4" rev-constraint-dynamic="5.0.4" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="asm-tree" type="jar" ext="jar" status="no" details="" size="29050" time="0" location="/Users/p5103951/.ivy2/cache/org.ow2.asm/asm-tree/jars/asm-tree-5.0.4.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/ow2/asm/asm-tree/5.0.4/asm-tree-5.0.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.ow2.asm" name="asm">
+			<revision name="5.0.4" status="release" pubdate="20150515110400" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="57">
+				<metadata-artifact status="no" details="" size="3758" time="0" location="/Users/p5103951/.ivy2/cache/org.ow2.asm/asm/ivy-5.0.4.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/ow2/asm/asm/5.0.4/asm-5.0.4.pom"/>
+				<caller organisation="org.pantsbuild" name="jarjar" conf="default, compile, runtime, master" rev="5.0.4" rev-constraint-default="5.0.4" rev-constraint-dynamic="5.0.4" callerrev="1.6.0"/>
+				<caller organisation="default" name="sparkmachinelearningref$sbt_2.10" conf="default" rev="5.0.4" rev-constraint-default="5.0.4" rev-constraint-dynamic="5.0.4" callerrev="1.0"/>
+				<caller organisation="org.ow2.asm" name="asm-tree" conf="default, compile, runtime, master" rev="5.0.4" rev-constraint-default="5.0.4" rev-constraint-dynamic="5.0.4" callerrev="5.0.4"/>
+				<artifacts>
+					<artifact name="asm" type="jar" ext="jar" status="no" details="" size="53297" time="0" location="/Users/p5103951/.ivy2/cache/org.ow2.asm/asm/jars/asm-5.0.4.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.ant" name="ant">
+			<revision name="1.9.6" status="release" pubdate="20150629012500" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://ant.apache.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="55">
+				<metadata-artifact status="no" details="" size="2976" time="0" location="/Users/p5103951/.ivy2/cache/org.apache.ant/ant/ivy-1.9.6.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/apache/ant/ant/1.9.6/ant-1.9.6.pom"/>
+				<caller organisation="org.pantsbuild" name="jarjar" conf="default, compile, runtime, master" rev="1.9.6" rev-constraint-default="1.9.6" rev-constraint-dynamic="1.9.6" callerrev="1.6.0"/>
+				<caller organisation="default" name="sparkmachinelearningref$sbt_2.10" conf="default" rev="1.9.6" rev-constraint-default="1.9.6" rev-constraint-dynamic="1.9.6" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="ant" type="jar" ext="jar" status="no" details="" size="2029794" time="0" location="/Users/p5103951/.ivy2/cache/org.apache.ant/ant/jars/ant-1.9.6.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/apache/ant/ant/1.9.6/ant-1.9.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.ant" name="ant-launcher">
+			<revision name="1.9.6" status="release" pubdate="20150629013700" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://ant.apache.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="56">
+				<metadata-artifact status="no" details="" size="2548" time="0" location="/Users/p5103951/.ivy2/cache/org.apache.ant/ant-launcher/ivy-1.9.6.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/apache/ant/ant-launcher/1.9.6/ant-launcher-1.9.6.pom"/>
+				<caller organisation="org.apache.ant" name="ant" conf="compile, runtime" rev="1.9.6" rev-constraint-default="1.9.6" rev-constraint-dynamic="1.9.6" callerrev="1.9.6"/>
+				<caller organisation="default" name="sparkmachinelearningref$sbt_2.10" conf="default" rev="1.9.6" rev-constraint-default="1.9.6" rev-constraint-dynamic="1.9.6" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="ant-launcher" type="jar" ext="jar" status="no" details="" size="18392" time="0" location="/Users/p5103951/.ivy2/cache/org.apache.ant/ant-launcher/jars/ant-launcher-1.9.6.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/apache/ant/ant-launcher/1.9.6/ant-launcher-1.9.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalactic" name="scalactic_2.10">
+			<revision name="2.2.1" status="release" pubdate="20140801060900" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scalatest.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="53">
+				<license name="the Apache License, ASL Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2964" time="0" location="/Users/p5103951/.ivy2/cache/org.scalactic/scalactic_2.10/ivy-2.2.1.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/scalactic/scalactic_2.10/2.2.1/scalactic_2.10-2.2.1.pom"/>
+				<caller organisation="com.eed3si9n" name="sbt-assembly" conf="compile" rev="2.2.1" rev-constraint-default="2.2.1" rev-constraint-dynamic="2.2.1" callerrev="0.14.3"/>
+				<caller organisation="default" name="sparkmachinelearningref$sbt_2.10" conf="default" rev="2.2.1" rev-constraint-default="2.2.1" rev-constraint-dynamic="2.2.1" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="scalactic_2.10" type="bundle" ext="jar" status="no" details="" size="386497" time="0" location="/Users/p5103951/.ivy2/cache/org.scalactic/scalactic_2.10/bundles/scalactic_2.10-2.2.1.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/scalactic/scalactic_2.10/2.2.1/scalactic_2.10-2.2.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
 		<module organisation="org.scala-sbt" name="sbt">
 			<revision name="0.13.13" status="release" pubdate="20161028130837" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="0">
 				<metadata-artifact status="no" details="" size="1455" time="0" location="/Users/p5103951/.ivy2/cache/org.scala-sbt/sbt/ivy-0.13.13.xml" searched="false" origin-is-local="false" origin-location="https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/sbt/0.13.13/ivys/ivy.xml"/>
@@ -286,6 +525,19 @@
 				<artifacts>
 					<artifact name="paranamer" type="jar" ext="jar" status="no" details="" size="32806" time="0" location="/Users/p5103951/.ivy2/cache/com.thoughtworks.paranamer/paranamer/jars/paranamer-2.6.jar">
 						<origin-location is-local="false" location="https://jcenter.bintray.com/com/thoughtworks/paranamer/paranamer/2.6/paranamer-2.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.inject" name="javax.inject">
+			<revision name="1" status="release" pubdate="20091013193500" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/atinject/" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="68">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2380" time="0" location="/Users/p5103951/.ivy2/cache/javax.inject/javax.inject/ivy-1.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/javax/inject/javax.inject/1/javax.inject-1.pom"/>
+				<caller organisation="default" name="sparkmachinelearningref$sbt_2.10" conf="default" rev="1" rev-constraint-default="1" rev-constraint-dynamic="1" callerrev="1.0"/>
+				<caller organisation="javax.enterprise" name="cdi-api" conf="default, compile, runtime, master" rev="1" rev-constraint-default="1" rev-constraint-dynamic="1" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="javax.inject" type="jar" ext="jar" status="no" details="" size="2497" time="0" location="/Users/p5103951/.ivy2/cache/javax.inject/javax.inject/jars/javax.inject-1.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/javax/inject/javax.inject/1/javax.inject-1.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
@@ -665,12 +917,14 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-lang" name="scala-reflect">
-			<revision name="2.10.6" status="release" pubdate="20150922070248" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.10.6/" downloaded="false" searched="false" default="false" conf="master(*), default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="6">
+			<revision name="2.10.6" status="release" pubdate="20150922070248" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.10.6/" downloaded="false" searched="false" default="false" conf="default, master(*), compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="6">
 				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html    "/>
 				<metadata-artifact status="no" details="" size="2835" time="0" location="/Users/p5103951/.ivy2/cache/org.scala-lang/scala-reflect/ivy-2.10.6.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/scala-lang/scala-reflect/2.10.6/scala-reflect-2.10.6.pom"/>
 				<caller organisation="org.scala-sbt" name="cache" conf="compile" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.6" callerrev="0.13.13"/>
 				<caller organisation="org.scala-lang" name="scala-compiler" conf="default, compile, runtime, master" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.6" callerrev="2.10.6"/>
+				<caller organisation="org.scalactic" name="scalactic_2.10" conf="default, compile, runtime, master" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.6" callerrev="2.2.1"/>
 				<caller organisation="org.scalamacros" name="quasiquotes_2.10" conf="compile, runtime" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.6" callerrev="2.0.1"/>
+				<caller organisation="default" name="sparkmachinelearningref$sbt_2.10" conf="default" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.6" callerrev="1.0" extra-info.apiURL="http://www.scala-lang.org/api/2.10.6/"/>
 				<caller organisation="org.scala-lang.modules" name="scala-pickling_2.10" conf="compile, runtime" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.6" callerrev="0.10.1"/>
 				<caller organisation="org.scala-sbt" name="ivy" conf="compile" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.6" callerrev="0.13.13"/>
 				<artifacts>
@@ -703,6 +957,8 @@
 				<caller organisation="org.scala-sbt" name="serialization_2.10" conf="default, compile, runtime, master" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.6" callerrev="0.1.2"/>
 				<caller organisation="org.scala-lang" name="scala-compiler" conf="default, compile, runtime, master" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.6" callerrev="2.10.6"/>
 				<caller organisation="org.scala-lang" name="scala-reflect" conf="compile, runtime" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.6" callerrev="2.10.6"/>
+				<caller organisation="org.scalactic" name="scalactic_2.10" conf="default, compile, runtime, master" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.6" callerrev="2.2.1"/>
+				<caller organisation="default" name="sparkmachinelearningref$sbt_2.10" conf="default" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.6" callerrev="1.0" extra-info.apiURL="http://www.scala-lang.org/api/2.10.6/"/>
 				<caller organisation="org.scala-sbt" name="incremental-compiler" conf="compile" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.6" callerrev="0.13.13"/>
 				<caller organisation="org.scala-tools.sbinary" name="sbinary_2.10" conf="compile" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.6" callerrev="0.4.2"/>
 				<caller organisation="org.scala-sbt" name="command" conf="compile" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.6" callerrev="0.13.13"/>
