@@ -43,7 +43,7 @@ object EmergencyCallsAnlysis extends App {
     StructField("dst", StringType, true)
   ))
 
-  import spark.implicits._
+  //import spark.implicits._
 
   val emergency_calls_df = spark.read.option("header", true).schema(schema_emergency_ds).csv("/Users/p5103951/IdeaProjects/DataSources/Emergency.csv")
   // emergency_calls_df.show(5)
