@@ -9,4 +9,3 @@ src/test/
 target/scala-2.11/resource_managed/
 target/scala-2.11/src_managed/
 .idea/
-src/main/resources/
