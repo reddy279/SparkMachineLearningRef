@@ -2,63 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66750e30-e3a9-47de-a210-bb922aa6b9cd" name="Default" comment="Initial Commit1">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Emergency.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/IPL_Matches.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ZipCodes.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/inpatientCharges.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/uberData.txt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/emergency/calls/analysis/uc1/EmergencyCallsAnlysis$$anonfun$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/com/emergency/calls/analysis/uc1/EmergencyCallsAnlysis$$anonfun$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/emergency/calls/analysis/uc1/EmergencyCallsAnlysis$$anonfun$10.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/com/emergency/calls/analysis/uc1/EmergencyCallsAnlysis$$anonfun$10.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/emergency/calls/analysis/uc1/EmergencyCallsAnlysis$$anonfun$11.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/com/emergency/calls/analysis/uc1/EmergencyCallsAnlysis$$anonfun$11.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/emergency/calls/analysis/uc1/EmergencyCallsAnlysis$$anonfun$2.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/com/emergency/calls/analysis/uc1/EmergencyCallsAnlysis$$anonfun$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/emergency/calls/analysis/uc1/EmergencyCallsAnlysis$$anonfun$3.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/com/emergency/calls/analysis/uc1/EmergencyCallsAnlysis$$anonfun$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/emergency/calls/analysis/uc1/EmergencyCallsAnlysis$$anonfun$4.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/com/emergency/calls/analysis/uc1/EmergencyCallsAnlysis$$anonfun$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/emergency/calls/analysis/uc1/EmergencyCallsAnlysis$$anonfun$5.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/com/emergency/calls/analysis/uc1/EmergencyCallsAnlysis$$anonfun$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/emergency/calls/analysis/uc1/EmergencyCallsAnlysis$$anonfun$6.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/com/emergency/calls/analysis/uc1/EmergencyCallsAnlysis$$anonfun$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/emergency/calls/analysis/uc1/EmergencyCallsAnlysis$$anonfun$7.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/com/emergency/calls/analysis/uc1/EmergencyCallsAnlysis$$anonfun$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/emergency/calls/analysis/uc1/EmergencyCallsAnlysis$$anonfun$8.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/com/emergency/calls/analysis/uc1/EmergencyCallsAnlysis$$anonfun$8.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/emergency/calls/analysis/uc1/EmergencyCallsAnlysis$$anonfun$9.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/com/emergency/calls/analysis/uc1/EmergencyCallsAnlysis$$anonfun$9.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/emergency/calls/analysis/uc1/EmergencyCallsAnlysis$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/com/emergency/calls/analysis/uc1/EmergencyCallsAnlysis$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/hospital/charges/data/analysis/HospitalChargesAnalysis$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/com/hospital/charges/data/analysis/HospitalChargesAnalysis$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/ipl/matches/stadium/analysis/uc1/IPLMatchWinningAnalysis$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/com/ipl/matches/stadium/analysis/uc1/IPLMatchWinningAnalysis$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/uber/core/uc1/UberCaseWeeklyDemand$$anonfun$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/com/uber/core/uc1/UberCaseWeeklyDemand$$anonfun$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/uber/core/uc1/UberCaseWeeklyDemand$$anonfun$2.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/com/uber/core/uc1/UberCaseWeeklyDemand$$anonfun$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/uber/core/uc1/UberCaseWeeklyDemand$$anonfun$3.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/com/uber/core/uc1/UberCaseWeeklyDemand$$anonfun$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/uber/core/uc1/UberCaseWeeklyDemand$$anonfun$4.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/com/uber/core/uc1/UberCaseWeeklyDemand$$anonfun$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/uber/core/uc1/UberCaseWeeklyDemand$$anonfun$5.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/com/uber/core/uc1/UberCaseWeeklyDemand$$anonfun$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/uber/core/uc1/UberCaseWeeklyDemand$$anonfun$6.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/com/uber/core/uc1/UberCaseWeeklyDemand$$anonfun$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/uber/core/uc1/UberCaseWeeklyDemand$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/com/uber/core/uc1/UberCaseWeeklyDemand$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/com/uber/core/uc1/UberCaseWeeklyDemand$delayedInit$body.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/com/uber/core/uc1/UberCaseWeeklyDemand$delayedInit$body.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.11/output_dsp" afterPath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.11/output_dsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala-2.11/com/emergency/calls/analysis/uc1/EmergencyCallsAnlysis.scala" afterPath="$PROJECT_DIR$/src/main/scala-2.11/com/emergency/calls/analysis/uc1/EmergencyCallsAnlysis.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala-2.11/com/hospital/charges/data/analysis/HospitalChargesAnalysis.scala" afterPath="$PROJECT_DIR$/src/main/scala-2.11/com/hospital/charges/data/analysis/HospitalChargesAnalysis.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala-2.11/com/ipl/matches/stadium/analysis/uc1/IPLMatchWinningAnalysis.scala" afterPath="$PROJECT_DIR$/src/main/scala-2.11/com/ipl/matches/stadium/analysis/uc1/IPLMatchWinningAnalysis.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala-2.11/com/uber/core/uc1/UberCaseWeeklyDemand.scala" afterPath="$PROJECT_DIR$/src/main/scala-2.11/com/uber/core/uc1/UberCaseWeeklyDemand.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala-2.11/com/uber/ml/ml/cluster/analysis/uc1/UberCluster.scala" afterPath="$PROJECT_DIR$/src/main/scala-2.11/com/uber/ml/ml/cluster/analysis/uc1/UberCluster.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/default/sparkmachinelearningref$sbt_2.10/1.0/resolved.xml.properties" afterPath="$PROJECT_DIR$/target/resolution-cache/default/sparkmachinelearningref$sbt_2.10/1.0/resolved.xml.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/default/sparkmachinelearningref$sbt_2.10/1.0/resolved.xml.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/default/sparkmachinelearningref$sbt_2.10/1.0/resolved.xml.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/default/sparkmachinelearningref$sources_2.10/1.0/resolved.xml.properties" afterPath="$PROJECT_DIR$/target/resolution-cache/default/sparkmachinelearningref$sources_2.10/1.0/resolved.xml.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/default/sparkmachinelearningref$sources_2.10/1.0/resolved.xml.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/default/sparkmachinelearningref$sources_2.10/1.0/resolved.xml.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/default/sparkmachinelearningref$sources_2.11/1.0/resolved.xml.properties" afterPath="$PROJECT_DIR$/target/resolution-cache/default/sparkmachinelearningref$sources_2.11/1.0/resolved.xml.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/default/sparkmachinelearningref$sources_2.11/1.0/resolved.xml.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/default/sparkmachinelearningref$sources_2.11/1.0/resolved.xml.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-sparkmachinelearningref$sbt_2.10-default.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-sparkmachinelearningref$sbt_2.10-default.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-sparkmachinelearningref$sources_2.10-default.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-sparkmachinelearningref$sources_2.10-default.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-sparkmachinelearningref$sources_2.11-compile-internal.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-sparkmachinelearningref$sources_2.11-compile-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-sparkmachinelearningref$sources_2.11-compile.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-sparkmachinelearningref$sources_2.11-compile.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-sparkmachinelearningref$sources_2.11-docs.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-sparkmachinelearningref$sources_2.11-docs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-sparkmachinelearningref$sources_2.11-optional.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-sparkmachinelearningref$sources_2.11-optional.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-sparkmachinelearningref$sources_2.11-plugin.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-sparkmachinelearningref$sources_2.11-plugin.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-sparkmachinelearningref$sources_2.11-pom.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-sparkmachinelearningref$sources_2.11-pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-sparkmachinelearningref$sources_2.11-provided.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-sparkmachinelearningref$sources_2.11-provided.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-sparkmachinelearningref$sources_2.11-runtime-internal.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-sparkmachinelearningref$sources_2.11-runtime-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-sparkmachinelearningref$sources_2.11-runtime.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-sparkmachinelearningref$sources_2.11-runtime.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-sparkmachinelearningref$sources_2.11-scala-tool.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-sparkmachinelearningref$sources_2.11-scala-tool.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-sparkmachinelearningref$sources_2.11-sources.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-sparkmachinelearningref$sources_2.11-sources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-sparkmachinelearningref$sources_2.11-test-internal.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-sparkmachinelearningref$sources_2.11-test-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-sparkmachinelearningref$sources_2.11-test.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-sparkmachinelearningref$sources_2.11-test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/updateClassifiers/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/$global/updateClassifiers/$global/streams/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/updateSbtClassifiers/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/$global/updateSbtClassifiers/$global/streams/out" />
     </list>
     <list id="2e5371b9-51b5-484c-87a9-1e612d48e732" name="Failed commit: Default" comment="Initial Commit" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -96,11 +41,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HospitalChargesAnalysis.scala" pinned="false" current-in-tab="true">
+      <file leaf-file-name="HospitalChargesAnalysis.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala-2.11/com/hospital/charges/data/analysis/HospitalChargesAnalysis.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
               <caret line="27" column="30" lean-forward="false" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -144,17 +99,17 @@
         <option value="$PROJECT_DIR$/src/main/resources/uberData.txt" />
         <option value="$PROJECT_DIR$/src/main/resources/IPL_Matches.csv" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/scala-2.11/com/uber/ml/ml/cluster/analysis/uc1/UberCluster.scala" />
         <option value="$PROJECT_DIR$/src/main/scala-2.11/com/emergency/calls/analysis/uc1/EmergencyCallsAnlysis.scala" />
         <option value="$PROJECT_DIR$/src/main/scala-2.11/com/uber/core/uc1/UberCaseWeeklyDemand.scala" />
         <option value="$PROJECT_DIR$/src/main/scala-2.11/com/hospital/charges/data/analysis/HospitalChargesAnalysis.scala" />
         <option value="$PROJECT_DIR$/src/main/scala-2.11/com/ipl/matches/stadium/analysis/uc1/IPLMatchWinningAnalysis.scala" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-63" />
+    <option name="x" value="-7" />
     <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="734" />
@@ -815,7 +770,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-63" y="23" width="1280" height="734" extended-state="0" />
+    <frame x="-7" y="23" width="1280" height="734" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -837,10 +792,10 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35037595" sideWeight="0.8414062" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35037595" sideWeight="0.8414062" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32330826" sideWeight="0.884375" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.275" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.48671874" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1068,14 +1023,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/Emergency_small.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1158,6 +1105,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="27" column="30" lean-forward="false" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
