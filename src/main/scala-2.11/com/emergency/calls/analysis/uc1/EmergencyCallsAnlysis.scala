@@ -64,7 +64,7 @@ object EmergencyCallsAnlysis extends App {
   val joined_emergency_zip: DataFrame = spark.sql("select et.title,zt.city,zt.state  from emergency_table et, zip_code_table zt where et.zip= zt.zip ")
 
 
-  //joined_emergency_zip.show(5)
+  joined_emergency_zip.show(5)
 
   /**
     * =========================================================
@@ -72,12 +72,15 @@ object EmergencyCallsAnlysis extends App {
     * =========================================================
     */
 
+
+  import spark.implicits._
+
   val issue_state_tupple = joined_emergency_zip.map(x => (x(0) + " -> " + x(2))).map(item => item).rdd
 
   val issues_by_state = issue_state_tupple.map(x => (x, 1)).reduceByKey(_ + _).map(item => item).sortByKey(false)
 
 
-  //issues_stateBy.collect().foreach(println)
+  issues_by_state.collect().foreach(println)
 
 
   /**
@@ -87,8 +90,8 @@ object EmergencyCallsAnlysis extends App {
     */
   val issue_city_tupple = joined_emergency_zip.map(x => (x(0) + " -> " + (x(1), x(2)))).map(item => item).rdd
   val issues_by_city = issue_city_tupple.map(x => (x, 1)).reduceByKey(_ + _).map(item => item).sortByKey(false)
+  issues_by_city.saveAsTextFile("/Users/p5103951/IdeaProjects/DataSources/Emergency_Output")
 
-
-  issues_by_city.collect().foreach(println)
+  // issues_by_city.collect().foreach(println)
 
 }

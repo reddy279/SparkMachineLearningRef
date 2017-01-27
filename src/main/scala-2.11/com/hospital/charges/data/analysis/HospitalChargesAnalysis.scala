@@ -11,7 +11,7 @@ object HospitalChargesAnalysis extends App {
   val spark = SparkSession.builder().appName("HospitalChargesAnalysis").master("local").getOrCreate()
 
 
-  val dataFrame = spark.read.option("header", true).option("inferSchema", true).csv("/Users/p5103951/IdeaProjects/DataSources/inpatientCharges.csv")
+  val dataFrame = spark.read.option("header", true).option("inferSchema", true).csv("/Users/p5103951/IdeaProjects/SparkMachineLearningRef/src/main/resources/inpatientCharges_small.csv")
   //dataFrame.show(5)
   //dataFrame.printSchema()
 

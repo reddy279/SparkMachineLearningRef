@@ -288,7 +288,6 @@
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.10.6 {default=[default(compile)]} => dependency: org.scala-lang#scala-reflect;2.10.6 {default=[default(compile)]}
 [info] Resolving org.scala-sbt#launcher-interface;1.0.0-M1 ...
 [debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#launcher-interface;1.0.0-M1 {compile=[default(compile)]}
-[debug] no default cache defined: set to /Users/p5103951/.ivy2/cache
 [debug] sbt-chain: module revision found in cache: org.scala-sbt#launcher-interface;1.0.0-M1
 [debug] 	found org.scala-sbt#launcher-interface;1.0.0-M1 in sbt-chain
 [debug] == resolving dependencies org.scala-sbt#classpath;0.13.13->org.scala-sbt#launcher-interface;1.0.0-M1 [compile->runtime]
@@ -2358,9 +2357,9 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.13!apply-macro.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#template-resolver;0.1!template-resolver.jar
 [debug] 	[NOT REQUIRED] org.jboss.interceptor#jboss-interceptor-api;1.1!jboss-interceptor-api.jar
-[debug] :: resolution report :: resolve 2796ms :: artifacts dl 57ms
+[debug] :: resolution report :: resolve 2164ms :: artifacts dl 37ms
 [debug] 	report for default#sparkmachinelearningref$sbt_2.10;1.0 default produced in /Users/p5103951/IdeaProjects/SparkMachineLearningRef/target/resolution-cache/reports/default-sparkmachinelearningref$sbt_2.10-default.xml
-[debug] 	resolve done (2796ms resolve - 57ms download)
+[debug] 	resolve done (2164ms resolve - 37ms download)
 [debug] Using inline dependencies specified in Scala.
 [debug] :: resolving dependencies :: default#sparkmachinelearningref$sources_2.10;1.0
 [debug] 	confs: [default]
@@ -3507,6 +3506,6 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#interface;0.13.13!interface.jar(src)
 [debug] 	[NOT REQUIRED] javax.inject#javax.inject;1!javax.inject.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-sbt#logging;0.13.13!logging.jar(src)
-[debug] :: resolution report :: resolve 352ms :: artifacts dl 50ms
+[debug] :: resolution report :: resolve 304ms :: artifacts dl 41ms
 [debug] 	report for default#sparkmachinelearningref$sources_2.10;1.0 default produced in /Users/p5103951/IdeaProjects/SparkMachineLearningRef/target/resolution-cache/reports/default-sparkmachinelearningref$sources_2.10-default.xml
-[debug] 	resolve done (352ms resolve - 50ms download)
+[debug] 	resolve done (304ms resolve - 41ms download)

@@ -2,7 +2,6 @@ package com.uber.core.uc1
 
 import java.util.Date
 
-import org.apache.spark.SparkContext
 import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.SparkSession
 
@@ -24,7 +23,7 @@ object UberCaseWeeklyDemand extends App {
     .getOrCreate()
 
   // Read the Dataset from the source.
-  val uberDataSet: RDD[String] = spark.sparkContext.textFile("/Users/p5103951/IdeaProjects/DataSources/uberData.txt")
+  val uberDataSet: RDD[String] = spark.sparkContext.textFile("/Users/p5103951/IdeaProjects/SparkMachineLearningRef/src/main/resources/uberData_small.txt")
   // Reader the Header Row
   val header = uberDataSet.first();
 
@@ -37,7 +36,7 @@ object UberCaseWeeklyDemand extends App {
   //Remove the Header part from the given DataSource
   val dataSetWithNoHeader: RDD[String] = uberDataSet.filter(line => line != header)
 
-  // Split the DS Records and extract the fields required.
+  // Split the DS Records and extract the fields required.f(0), f(1) and f(3)
   val fieldSplit: RDD[(String, Date, String)] = dataSetWithNoHeader.map(line => line.split(",")).map {
     f => (f(0), dateFormat.parse(f(1)), f(3))
 
@@ -49,7 +48,7 @@ object UberCaseWeeklyDemand extends App {
   val fieldsPairingAndDayFormat: RDD[(String, Int)] = fieldSplit.map(x => (x._1 + " " + weekDays(x._2.getDay), x._3.toInt))
 
 
-  // Prints the result on the console.
+  // Prints the result on the console. The sorting set on tbe basement
   val result: Unit = fieldsPairingAndDayFormat.reduceByKey(_ + _).sortByKey().collect().foreach(println)
 
 

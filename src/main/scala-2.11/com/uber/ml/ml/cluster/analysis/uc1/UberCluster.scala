@@ -4,12 +4,8 @@ package com.uber.ml.ml.cluster.analysis.uc1
 import org.apache.spark.ml.clustering.KMeans
 import org.apache.spark.ml.feature.VectorAssembler
 import org.apache.spark.sql.SparkSession
-import org.apache.spark.sql.types.{StringType, _}
-import org.apache.spark._
-import org.apache.spark.sql.SQLContext
-import org.apache.spark.sql.types._
 import org.apache.spark.sql.functions._
-import org.apache.spark.sql._
+import org.apache.spark.sql.types.{StringType, _}
 
 /**
   * Created by p5103951 on 1/10/17.
