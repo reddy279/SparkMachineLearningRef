@@ -2357,9 +2357,9 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.13!apply-macro.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#template-resolver;0.1!template-resolver.jar
 [debug] 	[NOT REQUIRED] org.jboss.interceptor#jboss-interceptor-api;1.1!jboss-interceptor-api.jar
-[debug] :: resolution report :: resolve 2164ms :: artifacts dl 37ms
+[debug] :: resolution report :: resolve 5059ms :: artifacts dl 87ms
 [debug] 	report for default#sparkmachinelearningref$sbt_2.10;1.0 default produced in /Users/p5103951/IdeaProjects/SparkMachineLearningRef/target/resolution-cache/reports/default-sparkmachinelearningref$sbt_2.10-default.xml
-[debug] 	resolve done (2164ms resolve - 37ms download)
+[debug] 	resolve done (5059ms resolve - 87ms download)
 [debug] Using inline dependencies specified in Scala.
 [debug] :: resolving dependencies :: default#sparkmachinelearningref$sources_2.10;1.0
 [debug] 	confs: [default]
@@ -3506,6 +3506,6 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#interface;0.13.13!interface.jar(src)
 [debug] 	[NOT REQUIRED] javax.inject#javax.inject;1!javax.inject.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-sbt#logging;0.13.13!logging.jar(src)
-[debug] :: resolution report :: resolve 304ms :: artifacts dl 41ms
+[debug] :: resolution report :: resolve 331ms :: artifacts dl 27ms
 [debug] 	report for default#sparkmachinelearningref$sources_2.10;1.0 default produced in /Users/p5103951/IdeaProjects/SparkMachineLearningRef/target/resolution-cache/reports/default-sparkmachinelearningref$sources_2.10-default.xml
-[debug] 	resolve done (304ms resolve - 41ms download)
+[debug] 	resolve done (331ms resolve - 27ms download)
