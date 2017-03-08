@@ -1,5 +1,4 @@
-package com.regression.ml.cancer
-
+package classification.logisticRegression.ml
 
 import org.apache.spark.ml.classification.{BinaryLogisticRegressionSummary, LogisticRegression, LogisticRegressionModel}
 import org.apache.spark.ml.evaluation.BinaryClassificationEvaluator

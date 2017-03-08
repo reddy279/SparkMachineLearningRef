@@ -1,4 +1,4 @@
-package decisiontrees.ml.creditrisk
+package decisiontrees.randomForest.creditrisk
 
 import org.apache.spark.ml.classification.RandomForestClassifier
 import org.apache.spark.ml.evaluation.BinaryClassificationEvaluator
