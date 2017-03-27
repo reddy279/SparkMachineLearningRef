@@ -155,7 +155,7 @@ object SpamFilter extends App {
 
   /**
     * Final Decision :
-    * The accuracy of the Spam Filtering Model is almost same with the both the algorithms.
+    * The accuracy of the Spam Filtering Model is almost same with  both the algorithms.
     */
 
 
