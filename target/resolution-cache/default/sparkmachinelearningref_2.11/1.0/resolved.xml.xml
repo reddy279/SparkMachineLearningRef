@@ -4,7 +4,7 @@
 		module="sparkmachinelearningref_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20170108132741"
+		publication="20170511161741"
 	>
 		<description>
 		SparkMachineLearningRef
@@ -39,5 +39,6 @@
 		<dependency org="org.apache.spark" name="spark-sql_2.11" rev="2.0.1" conf="compile->default(compile)"/>
 		<dependency org="org.apache.spark" name="spark-streaming_2.11" rev="2.0.1" conf="compile->default(compile)"/>
 		<dependency org="org.apache.spark" name="spark-mllib_2.11" rev="2.0.1" conf="compile->default(compile)"/>
+		<dependency org="org.apache.commons" name="commons-lang3_2.11" rev="3.5" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>

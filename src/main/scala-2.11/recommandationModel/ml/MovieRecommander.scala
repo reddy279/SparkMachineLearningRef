@@ -32,7 +32,7 @@ object MovieRecommander extends App {
 
   // Parse the movie Input data into Movie Object
   def parseMovie(str: String): Movie = {
-    val fields = str.split("::")
+    val fields:Array[String] = str.split("::")
     Movie(fields(0).toInt, fields(1))
   }
 

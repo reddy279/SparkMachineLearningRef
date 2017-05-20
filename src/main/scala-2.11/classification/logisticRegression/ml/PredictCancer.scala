@@ -62,7 +62,7 @@ object PredictCancer extends App {
   }
 
 
-  val spark = SparkSession.builder().appName("PredictCancer").master("local").getOrCreate()
+  val spark:SparkSession = SparkSession.builder().appName("PredictCancer").master("local").getOrCreate()
 
   val file_rdd: RDD[String] = spark.sparkContext.textFile("/Users/p5103951/IdeaProjects/SparkMachineLearningRef/src/main/resources/Cancer_Data.csv")
 
