@@ -1,0 +1,98 @@
+package com.spg.spear.rule.processor
+
+import org.apache.spark.sql.{DataFrame, Dataset, Row, SparkSession}
+
+object SparkColumnIdentifier {
+
+
+  val spark = SparkSession.builder().appName("SparkColumnIdentifier").master("local").getOrCreate()
+
+  import spark.sqlContext.implicits._
+
+  val data_1: DataFrame = spark.sparkContext.parallelize(
+    List(
+      ("123", "New York", "Shashi", "123456", "5000", "Water St"),
+      ("124", "New Jersey", "Mahesh", "123457", "6000", "Water Ct"),
+      ("125", "New Avenue", "Rajesh", "123458", "7000", "Water Mt")
+    )).toDF("emp_id", "emp_city", "emp_name", "emp_phone", "emp_sal", "emp_site")
+
+  val data_2: DataFrame = spark.sparkContext.parallelize(
+    List(
+      ("123", "New York", "Shashi", "123456", "5000", "Water St"),
+      ("124", "New Jersey", "Mahesh", "123457", "6000", "Water Ct"),
+      ("125", "New Revenue", "Rajesh", "123458", "7000", "Water Mt"),
+      ("126", "Charlotte", "Veeresh", "123459", "8000", "Water Mtt")
+    )).toDF("emp_id", "emp_city", "emp_name", "emp_phone", "emp_sal", "emp_site")
+
+  /**
+    * Find the columns that are changed.
+    * +----------+
+    * |  emp_city|
+    * +----------+
+    * |New Avenue|
+    * +----------+
+    */
+
+  def getOnlyColumnsDifference(): Unit = {
+    data_1.show()
+    val columns: Array[String] = data_1.schema.fields.map(_.name)
+    val dif:Array[Dataset[Row]]=columns.map(col=> data_1.select(col).except(data_2.select(col)))
+    dif.map(x=> {
+      if(x.count()> 0) x.show()
+    })
+
+
+  }
+
+
+  /**
+    * +------+----------+--------+---------+-------+--------+
+    * |emp_id|  emp_city|emp_name|emp_phone|emp_sal|emp_site|
+    * +------+----------+--------+---------+-------+--------+
+    * |   125|New Avenue|  Rajesh|   123458|   7000|Water Mt|
+    * +------+----------+--------+---------+-------+--------+
+    */
+  def getExcept(): Unit = {
+    val diff = data_1.except(data_2)
+    diff.show()
+  }
+
+  /**
+    * +------+----------+--------+---------+-------+--------+
+    * |emp_id|  emp_city|emp_name|emp_phone|emp_sal|emp_site|
+    * +------+----------+--------+---------+-------+--------+
+    * |   124|New Jersey|  Mahesh|   123457|   6000|Water Ct|
+    * |   123|  New York|  Shashi|   123456|   5000|Water St|
+    * +------+----------+--------+---------+-------+--------+
+    */
+  def getIntersect(): Unit = {
+    val inter = data_1.intersect(data_2)
+    inter.show()
+  }
+
+  /**
+    * +------+-----------+--------+---------+-------+---------+
+    * |emp_id|   emp_city|emp_name|emp_phone|emp_sal| emp_site|
+    * +------+-----------+--------+---------+-------+---------+
+    * |   125|New Revenue|  Rajesh|   123458|   7000| Water Mt|
+    * |   126|  Charlotte| Veeresh|   123459|   8000|Water Mtt|
+    * |   125| New Avenue|  Rajesh|   123458|   7000| Water Mt|
+    * +------+-----------+--------+---------+-------+---------+
+    */
+  def getDifferences(): Unit = {
+    val differ = data_1.union(data_2).except(data_1.intersect(data_2))
+    differ.show()
+  }
+
+  def getInOtherWay(): Unit = {
+    val first = data_1.join(data_2, Seq("emp_id", "emp_city"), "left").show(false)
+
+    val second = data_1.join(data_2, Seq("emp_id", "emp_city"), "right").show(false)
+  }
+
+  def main(args: Array[String]): Unit = {
+    SparkColumnIdentifier.getColumnsDiffer()
+  }
+
+
+}
