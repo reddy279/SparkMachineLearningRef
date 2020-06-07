@@ -1,0 +1,40 @@
+import org.apache.spark.sql.catalyst.encoders.ExpressionEncoder
+import org.apache.spark.sql.{Dataset, SparkSession}
+
+case class FlightSchedule(flightNo: String, departure: Long, arrival: Long)
+
+case class FlightInfo(flight: String, duration: String)
+
+object SparkEncodingTransformer {
+ 
+
+  def existingTransformationFunction(flightSchedule: FlightSchedule): FlightInfo = {
+    val duration = (flightSchedule.arrival - flightSchedule.departure) / 60 / 60
+    FlightInfo(flightSchedule.flightNo, s"$duration hrs")
+  }
+
+  def makeFlightInfo(schedules: Dataset[FlightSchedule]): Dataset[FlightInfo] = {
+    implicit val enc: ExpressionEncoder[FlightInfo] = ExpressionEncoder[FlightInfo]
+    schedules.map(schedule => existingTransformationFunction(schedule))
+
+  }
+
+  def main(args: Array[String]): Unit = {
+    val spark = SparkSession.builder().master("local").appName("Transformer").getOrCreate()
+    import spark.implicits._
+    val schedules = Seq(
+      FlightSchedule("GOI-134", 1569315038, 1569319183),
+      FlightSchedule("AI-123", 1569290498, 1569298178),
+      FlightSchedule("TK-006", 1567318178, 1567351838)
+    ).toDS()
+
+
+    schedules.show()
+
+    val flightInfo: Dataset[FlightInfo] = schedules.transform(makeFlightInfo)
+
+    flightInfo.show()
+
+
+  }
+}
